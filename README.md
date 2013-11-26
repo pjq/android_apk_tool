@@ -1,5 +1,10 @@
 android_apk_tool
 ================
+NOTICE:
+
+When use jarsigner to resign the new apk, it should use Java 1.6, 1.7 has some problems.
+  export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/
+
 
 Android Apk uncompile and resign tools
 
@@ -23,3 +28,8 @@ Build apk
 ./apktool B name/
 
 
+jenv
+==========
+tool to setup the Java home
+
+https://github.com/gcuisinier/jenv
