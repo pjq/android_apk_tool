@@ -19,7 +19,7 @@ else
     echo "Find more than one device:"
     devices=`echo "${devices}"|grep -n ""`
     echo "$devices"
-    read -p "Please select your devices: " choose
+    read -p "Please select your device: " choose
     choose=`echo "${devices}"|grep "^${choose}:" |cut -d ":" -f2|sed 's/device//g'|sed 's/ //g'`
 
     if [ -z $choose  ];then
