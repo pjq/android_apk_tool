@@ -49,10 +49,13 @@ adb wrapper bash script for the situation when more than one devices are connect
 ./adbw.sh install path_to_apk.apk
 ```
 Or you can move the adbw.sh to /usr/local/bin, this would be better
+
 `
 cp adbw.sh /usr/local/bin/adbw
 `
+
 Usage:
+
 ```bash
 pengjianqings-iMac:android_apk_tool pengjianqing$ adbw logcat
 Find more than one device:
