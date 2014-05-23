@@ -20,7 +20,8 @@ else
     devices=`echo "${devices}"|grep -n ""`
     echo "$devices"
     read -p "Please select your device: " choose
-    choose=`echo "${devices}"|grep "^${choose}:" |cut -d ":" -f2|sed 's/device//g'|sed 's/ //g'`
+#    choose=`echo "${devices}"|grep "^${choose}:" |cut -d ":" -f2|sed 's/device//g'|sed 's/ //g'`
+    choose=`echo "${devices}"|grep  -v "devices"|grep "^${choose}:"|sed "s/^${choose}://g"|sed 's/device//g'|sed 's/ //g'`
 
     if [ -z $choose  ];then
         echo "Your selection is wrong, can't find the device"
