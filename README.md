@@ -23,16 +23,17 @@ cd resign_tool
 ./resign_apk.sh path_to_apk.apk
 ```
 
-Uncompile apk
+Decompile apk
 ==========
-`
+```
 ./apktool D name.apk
-`
+```
+
 Build apk
 ==========
-`
+```
 ./apktool B name/
-`
+```
 
 dex2jar
 ==========
@@ -50,9 +51,9 @@ adb wrapper bash script for the situation when more than one devices are connect
 ```
 Or you can move the adbw.sh to /usr/local/bin, this would be better
 
-`
+```
 cp adbw.sh /usr/local/bin/adbw
-`
+```
 
 Usage:
 
